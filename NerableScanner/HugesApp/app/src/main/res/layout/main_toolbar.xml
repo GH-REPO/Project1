@@ -1,0 +1,40 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentInsetLeft="4dp"
+    app:contentInsetStart="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainToolbar"
+    style="@style/ToolBarStyle">
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/toolbarContainer"
+        android:gravity="center_vertical">
+        <ImageView
+            android:paddingLeft="10dp"
+            android:id="@+id/btnLogo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/toobar_logo"/>
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/toolBarTitle"
+            android:text="@string/app_name"
+            android:gravity="center_vertical|center_horizontal"/>
+        <ImageView
+            android:visibility="invisible"
+            android:paddingLeft="10dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/toobar_logo"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
+

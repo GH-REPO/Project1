@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">STATFY</string>
+    <string name="LogIn">Log In</string>
+    <string name="UserName">Username</string>
+    <string name="Password">Password</string>
+    <string name="RecoverPassword">Recover Password</string>
+    <string name="SingUp">Sign Up</string>
+    <string name="ConfirmUser">Confirm User</string>
+    <string name="BeaconID">Beacon ID</string>
+    <string name="NotSet">Please select</string>
+    <string name="DisableService">Disable Service</string>
+    <string name="LogoutExit">Logout &amp; Exit</string>
+    <string name="ServiceEvents">Service Events:</string>
+    <string name="SignUp">SignUp</string>
+</resources>
+

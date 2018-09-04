@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "info.tinyapps.huges"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    buildToolsVersion '25.0.3'
+}
+
+def androidLibraryVersion = '25.4.0'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation "com.android.support:appcompat-v7:${androidLibraryVersion}"
+    implementation "com.android.support:support-v4:${androidLibraryVersion}"
+    implementation('com.amazonaws:aws-android-sdk-cognitoauth:2.6.27@aar') { transitive = true }
+    implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.6.27'
+    implementation 'com.amazonaws:aws-android-sdk-core:2.6.27'
+    implementation 'com.amazonaws:aws-android-sdk-lambda:2.6.27'
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.6.27@aar') { transitive = true }
+    implementation "com.android.support:customtabs:${androidLibraryVersion}"
+    implementation "com.android.support:design:${androidLibraryVersion}"
+    implementation 'com.estimote:sdk:1.4.1'
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.6.27@aar') { transitive = true }
+    compile('com.estimote:proximity-sdk:0.5.0') { exclude group: 'com.android.support' }
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+}
