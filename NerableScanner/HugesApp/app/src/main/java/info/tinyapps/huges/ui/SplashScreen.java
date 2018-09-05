@@ -7,6 +7,10 @@ import android.os.Message;
 
 import info.tinyapps.huges.R;
 
+/**
+ * simple splash screen just waits 350 ms before redirect user to
+ * login screen
+ */
 public class SplashScreen extends BaseActivity {
 
     protected Handler mHandler = new Handler() {

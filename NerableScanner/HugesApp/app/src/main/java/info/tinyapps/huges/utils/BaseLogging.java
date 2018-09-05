@@ -16,6 +16,11 @@ import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+/**
+ * this calls handles logging
+ * it just stores all logs to a file.
+ * file is stored in Environment.getExternalStorageDirectory + file name is made as date stamp
+ */
 public class BaseLogging {
     public static void deleteFile(File file){
         if(!file.isDirectory()){

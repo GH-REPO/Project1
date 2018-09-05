@@ -34,6 +34,7 @@ import info.tinyapps.huges.data.NearableData;
 import info.tinyapps.huges.services.StaticConfig;
 import info.tinyapps.huges.utils.AppSettings;
 
+
 public class SelectBeaconActivity extends BaseActivity{
     boolean mDoNotSave;
     String mUserBeaconID;

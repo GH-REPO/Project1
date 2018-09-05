@@ -4,8 +4,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * different utility methods
+ */
 public class Utils {
     static SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd");
+
+    //formats date of birth as string to be send to server
     public static final String getDOB(int year, int monthOfYear,int dayOfMonth){
         Calendar cal = Calendar.getInstance();
 
@@ -16,6 +21,7 @@ public class Utils {
         return SDF.format(cal.getTime());
     }
 
+    //parses date
     public static final Calendar getCalendar(String dobStr){
         Calendar cal = Calendar.getInstance();
         if(dobStr == null || dobStr.length() == 0)

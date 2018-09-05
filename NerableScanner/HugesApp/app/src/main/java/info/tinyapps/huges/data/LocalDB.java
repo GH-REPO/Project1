@@ -9,7 +9,12 @@ import android.provider.BaseColumns;
 
 import java.util.ArrayList;
 
+/**
+ * local DB helper where records/fixes are stored before being reported
+ * to the server
+ */
 public class LocalDB extends SQLiteOpenHelper {
+//system required stuff to make a db
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "local_erecs.db";
 
@@ -51,7 +56,9 @@ public class LocalDB extends SQLiteOpenHelper {
         db.execSQL(SQL_DELETE_BEACONS_TABLE);
         onCreate(db);
     }
+//end of system stuff
 
+    //save new fix
     public static long addFix(Context ctx,String nearableUUID, String lat,String lon){
         long RecID = -1;
 
@@ -85,6 +92,7 @@ public class LocalDB extends SQLiteOpenHelper {
         return RecID;
     }
 
+    //get all fixes
     public static ArrayList<FixRecord> getRecords(Context ctx) throws Exception{
         FixRecord rec;
         ArrayList<FixRecord> res = new ArrayList<>();
@@ -126,6 +134,7 @@ public class LocalDB extends SQLiteOpenHelper {
         }
     }
 
+    //delete a fix
     public static long deleteFix(Context ctx, long recID){
         long res = -1;
         SQLiteDatabase db = null;
