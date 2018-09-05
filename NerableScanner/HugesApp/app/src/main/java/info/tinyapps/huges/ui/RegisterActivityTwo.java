@@ -1,23 +1,21 @@
 package info.tinyapps.huges.ui;
 
-import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
-import android.widget.DatePicker;
-import android.widget.RadioButton;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUser;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserAttributes;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserCodeDeliveryDetails;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool;
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler;
-import java.util.Calendar;
 import info.tinyapps.huges.R;
 import info.tinyapps.huges.services.StaticConfig;
-import info.tinyapps.huges.utils.Utils;
 
+/**
+ * activity to collect second set or registration data
+ */
 public class RegisterActivityTwo extends BaseActivity {
     String mBeaconID,mName,mFamily,mGender,mDOB;
     String mAdr1,mAdr2,mAdr3,mCountry,mPostCode;

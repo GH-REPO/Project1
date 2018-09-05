@@ -29,6 +29,10 @@ import info.tinyapps.huges.R;
 import info.tinyapps.huges.services.StaticConfig;
 import info.tinyapps.huges.utils.AppSettings;
 
+/**
+ * login activity
+ * it can login users, register new ones or confimr user
+ */
 public class LoginActivity extends BaseActivity {
     private static final int REQ_REQGISTARTION = 101;
     private static final int REQ_GETBEACON = 103;
@@ -40,8 +44,6 @@ public class LoginActivity extends BaseActivity {
         setContentView(R.layout.activity_login);
 
         if(BuildConfig.DEBUG){
-            //setFieldText(R.id.fldUser,"user_test2");
-            //setFieldText(R.id.fldPass,"User_Test2");
             setFieldText(R.id.fldUser,"ssmmailinator");
             setFieldText(R.id.fldPass,"SSss11,,");
         }

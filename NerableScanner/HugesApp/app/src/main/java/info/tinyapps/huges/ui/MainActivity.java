@@ -23,6 +23,10 @@ import info.tinyapps.huges.R;
 import info.tinyapps.huges.services.ScanService;
 import info.tinyapps.huges.utils.AppSettings;
 
+/**
+ * this is main (and currently mainly for testing) activity
+ * to start stop service and change settings
+ */
 public class MainActivity extends BaseActivity {
     TextView mLogField;
     static final int MSG_ADD_LOG = 1;

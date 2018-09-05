@@ -34,8 +34,17 @@ import info.tinyapps.huges.data.NearableData;
 import info.tinyapps.huges.services.StaticConfig;
 import info.tinyapps.huges.utils.AppSettings;
 
-
+/**
+ * activity used to select a beacon to be attached to user
+ */
 public class SelectBeaconActivity extends BaseActivity{
+    /**
+     * this is important flag when set beacon is not
+     * stored
+     * this is used when new uer is about to register
+     * for existing users the flag is not set so beacon is submitted to
+     * backend immedialty
+     */
     boolean mDoNotSave;
     String mUserBeaconID;
     BeaconAdapter mAdapter;

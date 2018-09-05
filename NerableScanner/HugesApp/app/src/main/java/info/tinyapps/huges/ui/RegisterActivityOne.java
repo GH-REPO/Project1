@@ -18,6 +18,9 @@ import info.tinyapps.huges.R;
 import info.tinyapps.huges.services.StaticConfig;
 import info.tinyapps.huges.utils.Utils;
 
+/**
+ * activity to collect first set of registration data
+ */
 public class RegisterActivityOne extends BaseActivity {
     String mBeaconID;
 
