@@ -4,6 +4,9 @@ import android.location.Location;
 
 import com.estimote.coresdk.recognition.packets.Nearable;
 
+/**
+ * AWS parameters wrapper class
+ */
 public class RequestData {
     String UUID;
     String latitude;

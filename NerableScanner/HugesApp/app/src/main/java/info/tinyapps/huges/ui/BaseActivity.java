@@ -22,6 +22,10 @@ import com.amazonaws.services.cognitoidentityprovider.AmazonCognitoIdentityProvi
 import info.tinyapps.huges.R;
 import info.tinyapps.huges.utils.BaseLogging;
 
+/**
+ * Base class for all activities to hold common methods
+ * like showing error and different UI related methods
+ */
 public class BaseActivity extends AppCompatActivity {
     public static final String USER_POOL_ID = "eu-west-1_8U1atIXea";
     public static final String ID_POOL_ID = "eu-west-1:5af1e331-fb34-4772-a49a-6f2e30e1699d";

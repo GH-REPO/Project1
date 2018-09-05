@@ -1,5 +1,8 @@
 package info.tinyapps.huges.data;
 
+/**
+ * AWS response data wrapper class
+ */
 public class ResponseData {
     String result;
 

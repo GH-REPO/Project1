@@ -8,6 +8,9 @@ import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.GenericHa
 
 import info.tinyapps.huges.R;
 
+/**
+ * activity to confirm new cognoto user user
+ */
 public class ConfirmUserActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

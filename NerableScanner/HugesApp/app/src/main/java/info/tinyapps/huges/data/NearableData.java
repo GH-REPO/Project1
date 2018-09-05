@@ -3,8 +3,7 @@ package info.tinyapps.huges.data;
 import com.estimote.coresdk.recognition.packets.Nearable;
 
 /**
- * data structure for beacon data
- * made of beacon data + dts
+ * data structure for beacon data that is made of beacon data + dts
  */
 public class NearableData {
     public long mDTS;

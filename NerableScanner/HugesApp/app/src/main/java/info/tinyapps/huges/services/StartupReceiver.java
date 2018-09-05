@@ -7,6 +7,10 @@ import android.content.Intent;
 import info.tinyapps.huges.utils.AppSettings;
 import info.tinyapps.huges.utils.BaseLogging;
 
+/**
+ * system broadcast receiver called by the system to start the service
+ * (if all conditions are met) on device start
+ */
 public class StartupReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {

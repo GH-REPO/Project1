@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import java.util.concurrent.TimeUnit;
 
 /**
- * persistent storage for app settins
+ * persistent storage for app settings
  */
 public class AppSettings {
     Context mCtx;

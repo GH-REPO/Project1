@@ -2,6 +2,9 @@ package info.tinyapps.huges.services;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * app static values
+ */
 public class StaticConfig {
     public static final long LOC_UPDATE_INTERVAL = 1500;
     public static final long LOC_FASTEST_UPDATE = 1000;

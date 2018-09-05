@@ -30,8 +30,7 @@ import info.tinyapps.huges.services.StaticConfig;
 import info.tinyapps.huges.utils.AppSettings;
 
 /**
- * login activity
- * it can login users, register new ones or confimr user
+ * login activity it can login users, register new ones or confirm user
  */
 public class LoginActivity extends BaseActivity {
     private static final int REQ_REQGISTARTION = 101;
@@ -265,6 +264,7 @@ public class LoginActivity extends BaseActivity {
         ForgotPasswordHandler newPassHandler = new ForgotPasswordHandler() {
             @Override
             public void onSuccess() {
+                hideWait();
             }
 
             @Override
@@ -353,6 +353,7 @@ public class LoginActivity extends BaseActivity {
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
+                hideWait();
             }
         });
 
